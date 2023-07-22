@@ -15,7 +15,7 @@ function groupArrayElements(arr, n) {
   let startIdx = 0;
 
   for (let i = 0; i < n; i++) {
-    let endIdx = startIdx + sizeOfPart + (i < remainder ? 1 : 0);
+    let endIdx = startIdx + sizeOfPart + (i < remainder ? 1 : 1);
     dividedArrays.push(arr.slice(startIdx, endIdx));
     startIdx = endIdx;
   }
